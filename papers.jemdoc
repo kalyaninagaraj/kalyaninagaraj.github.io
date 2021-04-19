@@ -1,2 +1,20 @@
 # jemdoc: menu{MENU}{papers.html}
 = Publications
+
+: {[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0067164 A Simulation Optimization Approach to Epidemic Forecasting, 2013, PLoS ONE, ]} Elaine O. Nsoesie, Richard. J. Beckman, Sara Shashaani, Kalyani Nagaraj, and Madhav V. Marathe
+
+: {[https://ieeexplore.ieee.org/document/6680469 Evaluating Strategies for Pandemic Response in Delhi Using Realistic Social Networks, 2013, IEEE International Conference on  Healthcare Informatics]} Huadong Xia, Kalyani Nagaraj, Jiangzhou Chen, and Madhav V. Marathe 
+
+: {[http://informs-sim.org/wsc13papers/includes/files/073.pdf R-SPLINE for local integer-ordered simulation optimization problems with stochastic constraints, Proceedings of the 2013 Winter Simulation Conference]} Kalyani Nagaraj and Raghu Pasupathy
+
+: {[Stochastically Constrained Simulation Optimization On Mixed-Integer Spaces, Ph.D. Thesis, Virginia Tech, 2014]} Kalyani Nagaraj
+
+: {[http://dx.doi.org/10.1016/j.artmed.2015.06.003 Synthesis of a High Resolution Social Contact Network for Delhi With Application to Pandemic Planning, 2015, Artifical Intelligence In Medicine]} Huadong Xia, Kalyani Nagaraj, Jiangzhou Chen, and Madhav V. Marathe
+ 
+: {[https://www.informs-sim.org/wsc15papers/191.pdf Modeling Dependence in Simulation Input: The Case for Copulas, Proceedings of the 2015 Winter Simulation Conference]} Kalyani Nagaraj and Raghu Pasupathy 
+
+: {[https://www.informs-sim.org/wsc17papers/includes/files/188.pdf An epsilon-constraint method for integer-ordered bi-objective simulation optimization, Proceedings of the 2017 Winter Simulation Conference]} Kyle Cooper, Susan Hunter, and Kalyani Nagaraj 
+
+: {[https://pubsonline.informs.org/doi/10.1287/ijoc.2019.0918 Bi-objective simulation optimization on integer lattices using the epsilon-constraint method in a retrospective approximation framework, 2020, INFORMS Journal on Computing]} Kyle Cooper, Susan Hunter, and Kalyani Nagaraj
+
+: {[http://www.optimization-online.org/DB_HTML/2015/10/5139.html Stochastically Constrained Simulation Optimization on Integer-Ordered Spaces: The cgR-SPLINE Algorithm]} Kalyani Nagaraj and Raghu Pasupathy

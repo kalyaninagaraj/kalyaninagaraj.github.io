@@ -1,5 +1,6 @@
 # jemdoc: menu{MENU}{software.html}
 = Software
 
-- [http://kalyaninagaraj.github.io/code/cgRSPLINE_v2.zip cgR-SPLINE] for stochastically constrained simulation optimization on integer spaces (Last updated: February 2017)
-- Visit [http://simopt.org simopt.org], a user-contributed code repository for simulation optimization
+: {Solver [http://kalyaninagaraj.github.io/code/cgRSPLINE_v2.zip cgR-SPLINE]} Solves stochastically constrained simulation optimization problems on integer spaces (Last updated: February 2017)
+
+: {Contributions to SimOpt} A library of problems and solvers for simulation optimizaton. Visit [https://github.com/simopt-admin/simopt/wiki] for the new repository. The old website is located at [http://simopt.org/oldindex.php].
