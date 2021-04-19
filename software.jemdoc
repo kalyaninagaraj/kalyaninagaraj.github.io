@@ -3,4 +3,4 @@
 
 : {Solver [http://kalyaninagaraj.github.io/code/cgRSPLINE_v2.zip cgR-SPLINE]} Solves stochastically constrained simulation optimization problems on integer spaces (Last updated: February 2017)
 
-: {Contributions to [[https://github.com/simopt-admin/simopt/wiki SimOpt]} A library of problems and solvers for simulation optimizaton. The old website is maintained at [http://simopt.org/oldindex.php].
+: {Contributions to [[https://github.com/simopt-admin/simopt/wiki SimOpt]} A library of problems and solvers for simulation optimizaton. The old website is maintained [http://simopt.org/oldindex.php here].
