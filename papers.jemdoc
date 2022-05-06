@@ -1,5 +1,5 @@
 # jemdoc: menu{MENU}{papers.html}
-= Publications
+= Peer-Reviewed Publications
 
 : {[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0067164 A Simulation Optimization Approach to Epidemic Forecasting, 2013, PLoS ONE, ]} Elaine O. Nsoesie, Richard. J. Beckman, Sara Shashaani, Kalyani Nagaraj, and Madhav V. Marathe
 
@@ -20,3 +20,9 @@
 : {[http://www.optimization-online.org/DB_HTML/2015/10/5139.html Stochastically Constrained Simulation Optimization on Integer-Ordered Spaces: The cgR-SPLINE Algorithm]} 
 *Won second place (runner-up position) in the 2014 INFORMS Computing Society Student Paper Competition* \n
 Kalyani Nagaraj and Raghu Pasupathy
+
+= arXive
+: {[https://arxiv.org/abs/1607.01375 Efficient Estimation in the Tails of Gaussian Copulas]}  Kalyani Nagaraj, Jie Xu, Raghu Pasupathy, Soumyadip Ghosh
+
+= Newsletter Article
+: {Bi-Objective Simulation Optimization On Integer Lattices, Research Spotlight in Cowboy Connections, Spring 2017, Oklahoma State University} Kalyani Nagaraj
