@@ -365,9 +365,9 @@ table.imgtable, table.imgtable td {
     text-align: left;
 }
 
-#cgRSPLINE { border: 1px solid white; }
-#cgRSPLINE td { border: 1px solid white; }
-#biobjective { border: 1px solid white; }
-#biobjective td { border: 1px solid white; }
-#partialinfoestim { border: 1px solid white; }
-#partialinfoestim td { border: 1px solid white; }
+#cgRSPLINE { border: white; }
+#cgRSPLINE td { border: white; }
+#biobjective { border:  white; }
+#biobjective td { border: white; }
+#partialinfoestim { border: white; }
+#partialinfoestim td { border: white; }
