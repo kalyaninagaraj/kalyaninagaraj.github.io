@@ -1,5 +1,4 @@
 /* Default css file for jemdoc. */
-
 table#tlayout {
     border: none;
     border-collapse: separate;
@@ -336,7 +335,7 @@ img.eqwl {
 }
 
 table {
-    border: 2px solid black;
+    border: 2px solid black;  /* changed black to white */
     border-collapse: collapse;
 }
 
@@ -345,7 +344,7 @@ td {
     padding-left: 0.5em;
     padding-right: 0.5em;
     text-align: center;
-    border: 1px solid gray;
+    border: 1px solid gray; /* changed gray to white */
 }
 
 table + table {
@@ -365,3 +364,8 @@ table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
 }
+
+#biobjective { border: 1px solid white; }
+#biobjective td { border: 1px solid white; }
+#partialinfoestim { border: 1px solid white; }
+#partialinfoestim td { border: 1px solid white; }
