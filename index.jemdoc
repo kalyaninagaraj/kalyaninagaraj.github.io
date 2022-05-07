@@ -10,7 +10,7 @@ GitHub: [https://github.com/kalyaninagaraj/]
 
 == A Brief Bio
 
-Prior to joining OSU in August 2016, I was a *Visiting Assistant Professor* in the [https://www.stat.purdue.edu/ Department of Statistics] at [Purdue University Purdue University] from 2014 to 2016. I graduated with a Masters and a Ph.D. in [https://www.ise.vt.edu/ Industrial and Systems Engineering (Operations Research)] from [https://vt.edu Virginia Tech] in 2008 and 2014, respectively, and a Bachelors in Engineering from [http://www.unipune.ac.in/ University of Pune] in 2007. 
+Prior to joining [https://go.okstate.edu/ Oklahoma State Univesity]'s [https://ceat.okstate.edu/iem/ School of Industrial Engineering and Management] as an *Assistant Professor* in 2016, I was a *Visiting Assistant Professor* in the [https://www.stat.purdue.edu/ Department of Statistics] at [Purdue University Purdue University] from 2014 to 2016. I graduated with a Masters and a Ph.D. in [https://www.ise.vt.edu/ Industrial and Systems Engineering (Operations Research)] from [https://vt.edu Virginia Tech] in 2008 and 2014, respectively, and a Bachelors in Engineering from [http://www.unipune.ac.in/ University of Pune] in 2007. 
 
 == Research Highlights
 
@@ -20,7 +20,7 @@ We develop a /networked epidemiology/ framework to understand how targeted conta
 ~~~
 {}{table}{activity}
 [https://doi.org/10.1016/j.artmed.2015.06.003 {{<img src="activity.jpg" alt="Activities of a family in the synthesized population" height="350">}}] ||
-Figure 1: Each member in this synthetically generated family has distinct travel "routes", each marked with a different coloured line. The father's travel sequence -- from home to work-place to another location and then back home -- is marked in thick red lines. The mother (solid thin black lines) goes to the mall and then to work before heading back home. And their son travels only to school and back (dashed blue lines) on a typical weekday. 
+*Figure 1*: Each member in this synthetically generated family has distinct travel "routes", each marked with a different coloured line. The father's travel sequence -- from home to work-place to another location and then back home -- is marked in thick red lines. The mother (solid thin black lines) goes to the mall and then to work before heading back home. And their son travels only to school and back (dashed blue lines) on a typical weekday. 
 ~~~
 
 \n
@@ -33,14 +33,21 @@ Stochastic simulations are increasingly used to model complex, real-world system
 
 A large majority of simulation optimization (SO) problems encountered in real-world scenarios involve integer decision variables. In optimization problems that arise in health care and manufacturing, both the objective function and the constraint functions defining the feasible region are estimated via a stochastic simulation. For instance, consider the problem of minimizing the total staffing cost of an emergency care unit while satisfying a prescribed service level. Then for a suggested staffing policy, both the cost and the service level are best estimated via a stochastic simulation. 
 
-Solutions to problems of resource allocation, like the staffing problem, tend to have binding constraints. This happens because the objective function pushes the optimal solution against a resource boundary. Ascertaining feasibility of a boundary solution from simulation estimates is a nontrivial challenge -- see Figure 1 and Movie 1. We propose the provably convergent algorithm *cgR-SPLINE* for this broad class of SO problems. 
+Solutions to problems of resource allocation, like the staffing problem, tend to have binding constraints. This happens because the objective function pushes the optimal solution against a resource boundary. Ascertaining feasibility of a boundary solution from simulation estimates is a nontrivial challenge -- see Figure 1 and Movies 1 and 2. We propose the provably convergent algorithm *cgR-SPLINE* for this broad class of SO problems. 
 
 cgR-SPLINE is a global solver that sequentially restarts a local solver from randomized initial locations. During each local search, cgR-SPLINE iteratively solves a sequence of ε–relaxed sample-path problems. When the local search ends (termination occurs when a predetermined simulation budget — that grows with every subsequent restart — is exhausted), cgR-SPLINE returns a local solution estimate. This local solution is probabilistically compared against the incumbent to obtain a global solution estimate. 
 
 ~~~
 {}{table}{cgRSPLINE}
-{{<img src="toy.jpg" alt="Feasible region of toy problem" height="340">}}  | {{<video height="300" controls><source src="movie_naive.mp4" type="video/mp4">Your browser does not support the video tag.</video>}} | {{<video height="300" controls><source src="movie_omega.mp4" type="video/mp4">Your browser does not support the video tag.</video>}} ||
-Figure 1: The shaded area marks the feasible region of a toy optimization problem whose solution is indicated with a red dot at point (3, 0). For simplicity, let us assume that the underlying simulation generates standard normal random variates for the constraint function h at all points x in the search space. | Movie 1: The sample average estimator of the constraint function at point (3, 0) equals 0.5 no matter how large the sample size m. So any solver that naively tests for feasibility in this fashion correctly identifies the boundary solution (0, 3) exactly 50% of the time, for /any/ sample size m. | Movie 2: Feasibility of the point (3, 0) (and consequently the consistency and efficiency of cgR-SPLINE) is guaranteed when the ε–relaxations in the sample-path constraints are progressively reduced to zero at a rate slower than the rate at which the standard error of the constraint estimate drops to zero. Notice that the probability with which the point (3, 0) is deemed feasible (this is the shaded area under the curve) approaches 1 as the sample size increases. ε in this movie is set to equal m^(-0.4).
+{{<img src="toy.jpg" alt="Feasible region of toy problem" height="340">}} ||
+*Figure 2*: The shaded area marks the feasible region of a toy optimization problem whose solution is indicated with a red dot at point (3, 0). For simplicity, let us assume that the underlying simulation generates standard normal random variates for the constraint function h at all points x in the search space. 
+~~~
+
+~~~
+{}{table}{cgRSPLINE}
+{{<video height="300" controls><source src="movie_naive.mp4" type="video/mp4">Your browser does not support the video tag.</video>}} | {{<video height="300" controls><source src="movie_omega.mp4" type="video/mp4">Your browser does not support the video tag.</video>}} ||
+*Movie 1*: The sample average estimator of the constraint function at point (3, 0) equals 0.5 no matter how large the sample size m. So any solver that naively tests for feasibility in this fashion correctly identifies the boundary solution (0, 3) exactly 50% of the time, for /any/ sample size m. | 
+*Movie 2*: Feasibility of the point (3, 0) (and consequently the consistency and efficiency of cgR-SPLINE) is guaranteed when the ε–relaxations in the sample-path constraints are progressively reduced to zero at a rate slower than the rate at which the standard error of the constraint estimate drops to zero. Notice that the probability with which the point (3, 0) is deemed feasible (this is the shaded area under the curve) approaches 1 as the sample size increases. For illustrative purpose, ε in this movie is simply set to equal m^(-0.4).
 ~~~
 
 \n\n
@@ -50,8 +57,10 @@ Our solver *R-PεRLE*, retrieves the so-called Pareto set of non-dominated solut
 
 ~~~
 {}{table}{biobjective}
-{{<img src="g1g2_airlinemaintenance.jpg" alt="Airline Problem" height="290">}}  | {{<img src="sdRK_quantile.jpg" alt="Nontrivial Toy Problem" height="290">}}||
-Figure 2(a): An illustration of the bi-objective aircraft maintenance scheduling problem. Solid red dots indicate efficient solutions, also known as non-dominated or Pareto solutions. A solution is said to be efficient if there exists no other solution that is relatively better in all objectives. | Figure 2(b): Numerical experiments on a nontrivial test problem: the graph shows the Hausdorff distance between the true and estimated Pareto sets as a function of total simulation effort. In the limit, R-PεRLE retrieves the true Pareto set and the distance metric converges to zero (almost surely).
+{{<img src="g1g2_airlinemaintenance.jpg" alt="Airline Problem" height="310">}} |
+{{<img src="sdRK_quantile.jpg" alt="Nontrivial Toy Problem" height="310">}}||
+*Figure 3(a)*: An illustration of the bi-objective aircraft maintenance scheduling problem. Solid red dots indicate efficient solutions, also known as non-dominated or Pareto solutions. A solution is said to be efficient if there exists no other solution that is relatively better in all objectives. | 
+*Figure 3(b)*: Numerical experiments on a nontrivial test problem: the graph shows the Hausdorff distance between the true and estimated Pareto sets as a function of total simulation effort. In the limit, R-PεRLE retrieves the true Pareto set and the distance metric converges to zero (almost surely).
 ~~~
 
 === III. Rare Event Estimation
@@ -62,15 +71,19 @@ We develop a suite of efficient estimators using ideas from importance sampling 
 
 ~~~
 {}{table}{partialinfoestim}
-[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-1.jpg" alt="Description of picture 1" height="300">}}] |
-[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-2.jpg" alt="Description of picture 2" height="300">}}] |
-[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-3.jpg" alt="Description of picture 3" height="300">}}] ||
-Step 1: Identify the dominating point *z*\* of the known constrained set (shaded area) associated with the rare-event involving a NORTA distributed random vector *Z*. | Step 2: Generate a random variate from an shifted-exponentail distribution in the direction of *z*\*. | Step 3: The parameter of this exponential distribution is of the order of the 2-norm of *z*\*. The generated exponential random variate identifies just how far inside constrained set the sampled point lies. Larger the size of *z*\*, closer the point will be to the rare-event boundary.||
-[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-4.jpg" alt="Description of picture 4" height="300">}}] |
-[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-5.jpg" alt="Description of picture 5" height="300">}}]|
-[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-6.jpg" alt="Description of picture 6" height="300">}}] ||
-Step 4: Next, to identify the remaining co-ordinates of the random vector, sample along all directionals orthogonal to each other and to *z*\* | Step 5: The sampling distribution for the remaining co-ordinates will be a standard normal and sampling will be constrained to the interval within the constrained set.| Step 6: Generate several such random vector *Z* independently from within the constrained set (one such random vector denoted by the black star) to compute an estimate of the required rare-event quantity. ||
-| Figure 3: Steps to generate a random vector for the partial information estimator.| 
+[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-1.jpg" alt="Description of picture 1" height="420">}}] |
+[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-2.jpg" alt="Description of picture 2" height="420">}}] ||
+Step 1: Identify the dominating point *z*\* of the known constrained set (shaded area) associated with the rare-event involving the NORTA random vector *Z*. | 
+Step 2: Generate a random variate from a shifted-exponentail distribution in the direction of *z*\*.||
+[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-3.jpg" alt="Description of picture 3" height="420">}}] | 
+[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-4.jpg" alt="Description of picture 4" height="420">}}] ||
+Step 3: The parameter of this exponential distribution is of the order of the 2-norm of *z*\*. The generated exponential random variate identifies just how far inside constrained set the sampled point lies. Larger the size of *z*\*, closer the point will be to the set boundary.| 
+Step 4: Next, to identify the remaining co-ordinates of the random vector, sample along all directionals orthogonal to *z*\* and to each other at *z*\*. ||
+[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-5.jpg" alt="Description of picture 5" height="420">}}]|
+[https://arxiv.org/abs/1607.01375 {{<img src="PartialInfoEstim-6.jpg" alt="Description of picture 6" height="420">}}] ||
+Step 5: The remaining co-ordinates are sampled from the standard normal distribution and sampling will be constrained to intervals intersecting inside the constrained set.| 
+Step 6: Generate several such random vector *Z* independently (one such random vector is indicated by a black star in the figure) to compute an estimate of the required rare-event quantity. ||
+*Figure 4*: Steps to generate a random vector for the partial information estimator.
 ~~~
 
 \n
