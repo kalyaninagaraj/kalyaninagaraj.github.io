@@ -6,4 +6,4 @@
 : {Co-developer and contibutor of the open-source Sim-Opt Library} of solvers and problems in simulation optimization. The library is now hosted [https://github.com/simopt-admin/simopt/wiki here] on GitHub. The old website is maintained [http://simopt.org/oldindex.php here].
 
 : {R-SPLINE}
-Wrote a C implementation of the R-SPLINE simulation optimization algorithm, now part of the SAS/OR software suite. 
+Wrote a C implementation of the R-SPLINE simulation optimization algorithm, later incorporated by SAS Inc. in their SAS-OR tool. 
